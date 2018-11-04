@@ -2,6 +2,13 @@
 ####### Minkowski Distance #######
 ##################################
 
+#' @title Minkowski Distance
+#' @description computes the Minkowski Distance between two points x and y, at a given p-value
+#' @param x (vector)
+#' @param y (vector)
+#' @param p (numeric or "max"; default = 1)
+#' @return a numeric value
+
 minkowski <- function(x, y, p = 1) {
   if(length(x) != length(y)) {
     stop("x and y have different lengths")
